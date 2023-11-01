@@ -1,0 +1,15 @@
+li::marker{
+    font-weight: bold;
+    color: black;
+}
+li{
+    color: rgba(91, 1, 175, 0.973);
+}
+
+.list>ol>li{
+    list-style-type:upper-roman;
+}
+
+.list ol ol ol li{
+    list-style-type:lower-alpha;
+}

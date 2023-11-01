@@ -1,0 +1,33 @@
+
+
+#Seasons>li{
+    list-style: none;
+}
+
+#Seasons>li::before{
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-left: -15px;
+    background-image: url("../icons/arrow.png");
+    
+}
+
+
+#Winter{
+    list-style-image: url("../icons/winter_16.png");
+}
+
+#Spring{
+    list-style-image: url("../icons/spring_16.png");
+
+}
+
+#Summer{
+    list-style-image: url("../icons/summer_16.png");
+}
+
+#Autumn{
+    list-style-image: url("../icons/autumn_16.png");
+}
