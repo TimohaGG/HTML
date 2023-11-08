@@ -1,0 +1,38 @@
+body{
+   
+   margin: 0;
+    font-size: 20px;
+}
+
+.page{
+    width:1300px;
+    margin: 0 auto;
+    background-color: rgba(241,244,245,255);
+    padding: 30px;
+}
+
+
+dfn{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.Contents{
+    background-color: rgba(233,233,233,255);
+    border: 1px solid darkgray;
+    width: 450px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.Contents h3{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color:#808080;
+    width:200px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase;
+    padding: 20px;
+}
+
+li:hover{
+    background-color: #5e5e5e;
+}
+
+
+li::before{
+    content: "";
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    
+}
+
+#edit::before{
+    background-image: url("../icons_hw_module_3/edit.png");
+}
+
+#favourites::before{
+    background-image: url("../icons_hw_module_3/favorites.png");
+}
+#history::before{
+    background-image: url("../icons_hw_module_3/history.png");
+}
+#security::before{
+    background-image: url("../icons_hw_module_3/security.png");
+}
+#settings::before{
+    background-image: url("../icons_hw_module_3/settings.png");
+}
