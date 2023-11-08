@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    background-image: url("../images/bg.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+}
