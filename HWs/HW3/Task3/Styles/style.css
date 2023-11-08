@@ -1,0 +1,32 @@
+
+body{
+    margin: 0;
+}
+
+#main{
+    width:fit-content;
+    margin: 0 auto;
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    
+}
+
+dt{
+    font-style:italic;
+}
+
+dd ol li{
+    line-height: 20px;
+}
+
+.example{
+    color: rgb(180, 180, 180);
+}
+
+.synonims{
+    color: rgb(0, 0, 182);
+}
+
+strong{
+    color: rgb(114, 114, 114);
+}
