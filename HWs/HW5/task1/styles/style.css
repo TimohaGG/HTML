@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid cadetblue;
+    position: relative;
+}
+
+.arrowBig{
+    position: absolute;
+  
+    background-color: cadetblue;
+    width: 3px;
+    height: 50%;
+
+    left:50%;
+     animation: clockTick 2s linear 0s infinite;
+}
+
+.arrowSmall{
+    position: absolute;
+    
+    background-color: cadetblue;
+    width: 3px;
+    height: 25%;
+
+    top:25%;
+    left: 50%;
+
+    animation: clockSmall 24s linear 0s infinite;
+}
+
+.circleSmall{
+    width: 10px;
+    height: 10px;
+    background-color: cadetblue;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+@keyframes clockTick{
+    from{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+
+    to{
+        transform: rotate(360deg);
+        transform-origin: bottom;
+    }
+
+   
+}
+
+
+@keyframes clockSmall{
+    from{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+
+    to{
+        transform: rotate(360deg);
+        transform-origin: bottom;
+    }
+
+   
+}
+
