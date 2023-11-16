@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+   margin-bottom: 30px;
+}
+
+li{
+    background-color: #4c996c;
+    width: 130px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-right: solid 1px #3d865a;
+    position: relative;
+}
+
+li:hover{
+    background-color: #408059;
+}
+
+.Categories ul{
+   display: none;
+}
+
+.Categories:hover>ul{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 0px;
+    top: 100%;
+}
+
+.side:hover ul{
+    left: 100%;
+    top:0px;
+}
+
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
