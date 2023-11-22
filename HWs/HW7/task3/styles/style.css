@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+}
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+
+nav,main
+{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #383838;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    background-color: #383838;
+    justify-content: left;
+    align-items: center;
+}
+
+header nav ul li{
+    background-color: #383838;
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    vertical-align: middle;
+    height: 100%;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    background-color: #2b2b2b;
+}
+
+header nav ul li:first-child{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+main{
+    display: flex;
+}
+
+#mainContent{
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainContent h1{
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+#mainContent p{
+    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+#mainContent p:first-of-type{
+    padding-bottom: 20px;
+}
+
+#mainContent img{
+    align-self: center;
+}
+
+#asideInfo > *{
+    background-color: white;
+    margin: 20px;
+    min-width: 100px;
+    padding: 20px;
+}
+
+#asideInfo h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#asideInfo .events ul{
+  
+    list-style-position: inside;
+    list-style: none;
+}
+
+#asideInfo .events ul li{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#asideInfo .events ul li::before{
+    content: "";
+    width: 70px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.calendar27::before{
+    background-image: url("../images/calendar_27.png");
+}
+
+.calendar7::before{
+    background-image: url("../images/calendar_7.png");
+}
+
+.calendar19::before{
+    background-image: url("../images/calendar_19.png");
+}

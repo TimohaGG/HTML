@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    width: 1000px;
+    margin: 0  auto;
+    position: relative;
+}
+
+nav{
+    
+    height: 100%;
+    background-color: gray;
+    position: fixed;
+    
+}
+.imagesList li{
+    background-color: gray;
+}
+.imagesList{
+    position: relative;
+    list-style: none;
+    background-color: gray;
+    height: 100%;
+    text-align: center;
+    color: white;
+    z-index: -1;
+}
+
+.imagesList li:first-child{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    display: inline-block;
+    width:70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+   
+}
+
+#editMenu .image{
+    background-image: url('../images/edit.png');
+}
+
+#favouritesMenu .image{
+    background-image: url('../images/favorites.png');
+}
+#historyMenu .image{
+    background-image: url('../images/history.png');
+}
+#securityMenu .image{
+    background-image: url('../images/security.png');
+}
+#settingsMenu .image{
+    background-image: url('../images/settings.png   ');
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.textList{
+    /* display: none; */
+    position: absolute;
+    top:0px;
+    left: -150%;
+    list-style: none;
+    background-color: gray;
+    height: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    transition: left 1s;
+    z-index: -2;
+}
+
+.textList li:not(:first-child){
+    height: 75px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav:hover .textList{
+    display: block;
+    top:0px;
+    left: 100%;
+    transition: left 1s;
+    
+}

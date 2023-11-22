@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    width: 100px;
+}
+
+.menu p{
+    background-color:darkgray;
+    color: white;
+    
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+.menu p:hover{
+    background-color: rgb(66, 66, 66);
+}
+.contents{
+    display: flex;
+}
+
+.card{
+    background-color: rgb(66, 66, 66);
+    padding: 20px;
+    color: white;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.card .img{
+    width: 100%;
+    min-width: 350px;
+    height: 220px;
+    min-height: 50px;
+    background-image: url("../images/350x220.png");
+    background-position:left center;
+    background-repeat: no-repeat;
+    
+}

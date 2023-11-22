@@ -1,0 +1,38 @@
+#main{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.modalWindow{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 1;
+    position: relative;
+    padding: 30px;
+}
+
+.modalWindow .closeButton::before{
+    content: "X";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.wrap{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

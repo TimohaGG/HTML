@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card{
+   
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+.red .stick,
+.red .button{
+    background-color: #b64359;
+}
+
+.orange .stick,
+.orange .button{
+    background-color: #ca9645;
+}
+
+.blue .stick,
+.blue .button
+{
+    background-color: #2b6688;
+}
+
+.green .stick,
+.green .button{
+    background-color: #64ba35;
+}
+
+.card h2{
+    padding: 15px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.card .price{
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card .price p:last-child{
+    font-size: 15px;
+    color: gainsboro;
+}
+
+
+.stick{
+    height: 3px;
+    width: 100%;
+}
+
+.card .options{
+    font-weight:bold;
+    font-size: 13px;
+}
+
+.card .options p{
+    padding: 5px;
+}
+
+.card .button{
+    display: inline-block;
+    width: 40%;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.card .button:hover{
+    cursor: pointer;
+   transition: all 1s;
+}
+
+.card:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+.cards{
+    padding-top: 100px;
+    display: flex;
+    width: 820px;
+    justify-content: space-between;
+    margin: auto;
+}
