@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+            // // <!-- Напишіть функцію, яка приймає 2 числа та повертає мен- ше з них. -->
+            // function getBiggerValue(a,  b){
+            //     return a>b ? a : b;
+            // }
+            
+            // let num1 = +prompt("Введить число 1");
+            // let num2 = +prompt("Введить число 2");
+            // alert(getBiggerValue(num1,num2));
+
+            // //Напишіть функцію, яка зводить передане число у вказаний ступінь.
+            // let num1 = +prompt("Введить число 1");
+            // let num2 = +prompt("Введить число 2");
+
+            // function pow(number, val){
+            //     return number**val;
+            // }
+
+            // alert(pow(num1, num2));
+
+            // // Напишіть функцію, яка приймає 2 числа та знак (+ - * /), підраховує приклад і повертає результат.
+    
+            // function calculate(num1, num2, action){
+            //     let res;
+            //     switch (action){
+            //         case '+':{res=num1+num2;}break;
+            //         case '-':{res=num1-num2;}break;
+            //         case '/':{res=num1/num2;}break;
+            //         case '*':{res= num1*num2;}break;
+            //     }
+            //     return res;
+            // }
+            // let num1 = +prompt("Введить число 1");
+            // let num2 = +prompt("Введить число 2");
+            // let action = prompt("Введить ");
+            // alert(calculate(num1,num2,action));
+
+            // // Напишіть функцію, яка перевіряє, чи є передане їй число простим.
+            // function normalNum(num,separator=2){
+
+            //     console.log(num + " " +separator);
+            //     if(separator==num){
+            //         console.log("true");
+            //         return true;
+            //     }
+            //     else if(num%separator==0){
+            //         console.log("false");
+            //         return false;
+            //     }
+            //     else{
+            //         console.log(separator+1);
+            //         return normalNum(num,separator+1)
+            //     }
+            // }
+            // let number = +prompt("Введить число");
+
+            // if(normalNum(number)===true){
+            //     alert("Число просте");
+            // }
+            // else
+            //     alert("Число не просте");
+
+
+            // // Напишіть функцію, яка приймає число і виводить табли- цю множення для цього числа. 
+            // // Викличте функцію для всіх чисел від 2 до 9.
+            // function multilpyTable(number, multiplyer=1){
+            //     console.log(`${number} * ${multiplyer} = ${number*multiplyer}`);
+            //     if(multiplyer<9)
+            //         multilpyTable(number, multiplyer+1);
+            //     else
+            //      return;
+            // }
+            // let number = +prompt("Введить число");
+
+            // multilpyTable(number);
+
+            // // Напишіть функцію, яка реалізує роботу оператора %. Функ- ція приймає 2 
+            // // параметри та повертає залишок від ділення першого параметра на другий. 
+            // // У функції використовуйте тільки + - * /, а оператор % не використовувати.
+
+            // function devideWithRemaider(number,devider){    //5 , 2
+            //     let res = number/devider;
+            //     return parseInt((res - parseInt(res)) * 100);
+            // }
+            // let number = +prompt("Введить число яке ділити");
+            // let devider = +prompt("Введить число на яке ділити");
+            // alert(devideWithRemaider(number,devider));
+
+
+            // // Напишіть функцію, яка приймає від 1 до 5 чисел і повертає їх суму.
+
+            // function summer(){
+            //     if(arguments.length>5)
+            //     return;
+            //     let res=0;
+            //     for(i=0;i<arguments.length;i++){
+            //         res+=arguments[i];
+            //     }
+            //     return res;
+            // }
+            // alert(summer(1,2,3,4,5));
+
+            // // Напишіть функцію, яка приймає від 1 до 5 чисел і повертає більше з них.
+
+            //  function summer(){
+            //     if(arguments.length>5)
+            //     return;
+            //     let res=arguments[0];
+            //     for(i=1;i<arguments.length;i++){
+            //         if(res<arguments[i])
+            //             res = arguments[i];
+            //     }
+            //     return res;
+            // }
+            // alert(summer(1,2,3,4,5));
+
+            // // Напишіть функцію, яка виводить усі парні або непарні числа у вказаному
+            // //  користувачем діапазоні. Які числа ви- водити, визначається 
+            // //  третім параметром типу bool (true – парні, false – непарні).
+
+            // let left = +prompt("Введіть число 1");
+            // let right = +prompt("Введіть число 2");
+            // let needEven = !!prompt("Введить true для парних або false для непарних");
+            // evenOrOdd(left,right,needEven);
+            // function evenOrOdd(left, right, needEven){
+            //     needEven = (needEven==="true");
+            //     console.log(needEven);
+            //     if(left>right)
+            //         return;
+               
+            //     for(i=left;i<=right;i++){
+            //         if(!!needEven&&i%2==0)
+            //             console.log(i);
+            //         else if(!!!needEven&&i%2!=0)
+            //             console.log(i);
+            //     }
+                   
+            // }
+            
+
+
+            // Напишітьфункцію,якаприймаєдату(день,місяць,рік)і повертає дату наступного 
+            // дня у вигляді рядка «день.місяць. рік». Перевірку на високосний рік 
+            // бажано написати окре- мою функцією.
+
+            function isLeapYear(year){
+                console.log(year%4===0);
+                return year%4===0;
+            }
+            function isDateOk(day,month,year){
+                
+                if(day>maxDay||day<=0)
+                {
+                  
+                    return false;
+                    
+                }
+                else if(month>12||month<=0){
+                    return false;
+                }
+                    
+                else
+                    return true;
+            }
+
+            function getMaxDay(month,year){
+               
+                switch(month){
+                    case 1:
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 12:{maxDay=31;}
+                    break;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11:{maxDay = 30;}
+                    break;
+                    case 2:{
+                        if(isLeapYear(year)){
+                            maxDay = 29;
+                        }
+                        else    
+                            maxDay=28;
+                    }
+                    break;
+                }
+                return maxDay;
+            }
+
+            let maxDay;
+            function nextDay(day, month, year){
+                maxDay = getMaxDay(month,year);
+                
+                if(!isDateOk(day,month,year)){
+                    return "";
+                }
+               
+                if(day+1>maxDay&&month===12){
+                    day = 1;
+                    month = 1;
+                    year++;
+                }
+                else if(day+1>maxDay){
+                    day = 1;
+                    if(month+1>12)
+                        month = 1;
+                    else
+                        month++;
+
+                }
+                else {
+                    day++;
+                }
+                return `${day}.${month}.${year}`;
+                
+            }
+            let day = +prompt("Введіть день");
+            let month = +prompt("Введіть місяць");
+            let year = +prompt("Введіть рік");
+            console.log(nextDay(day,month,year));
+         </script>
+</body>
+</html>
